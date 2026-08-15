@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Examination Portal</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background-color: #ffffff;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 10px auto;
+        border: 3px solid #000000;
+    }
+
+    /* Header */
+    .header {
+        background-color: #2f8ff0;
+        text-align: center;
+        padding: 30px 10px;
+    }
+
+    .header h1 {
+        color: #ffffff;
+        font-size: 42px;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    /* Navigation bar */
+    .navbar {
+        background-color: #9fd3f5;
+        text-align: center;
+        padding: 10px 0;
+        font-family: "Times New Roman", serif;
+    }
+
+    .navbar a {
+        color: #0000ee;
+        text-decoration: underline;
+        margin: 0 8px;
+        font-size: 15px;
+    }
+
+    /* Tagline bar */
+    .tagline {
+        background-color: #5a86ab;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .tagline p {
+        color: #ffffff;
+        font-style: italic;
+        font-weight: bold;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    /* Main content area */
+    .content {
+        display: table;
+        width: 100%;
+    }
+
+    .main-col {
+        display: table-cell;
+        width: 70%;
+        background-color: #f2f2f2;
+        padding: 20px 25px;
+        vertical-align: top;
+        box-sizing: border-box;
+        border-right: 1px solid #999999;
+    }
+
+    .side-col {
+        display: table-cell;
+        width: 30%;
+        background-color: #e2f2fb;
+        padding: 20px;
+        vertical-align: top;
+        box-sizing: border-box;
+    }
+
+    .main-col h2 {
+        color: #1f3864;
+        font-size: 26px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .divider {
+        border: none;
+        border-top: 1px solid #333333;
+        margin: 10px 0 15px 0;
+    }
+
+    .intro-block {
+        overflow: auto;
+    }
+
+    .placeholder-img {
+        width: 140px;
+        height: 40px;
+        border: 1px solid #000000;
+        background-color: #ffffff;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .intro-block p {
+        margin: 0 0 10px 0;
+        line-height: 1.5;
+        font-size: 14.5px;
+        color: #222222;
+    }
+
+    .main-col > p {
+        line-height: 1.5;
+        font-size: 14.5px;
+        color: #222222;
+        clear: both;
+    }
+
+    /* Sidebar / team section */
+    .side-col h3 {
+        color: #1f3864;
+        text-align: center;
+        margin-top: 0;
+        font-size: 22px;
+    }
+
+    .side-divider {
+        border: none;
+        border-top: 2px solid #1f3864;
+        width: 100%;
+        margin: 8px 0 25px 0;
+    }
+
+    .team-member {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .team-photo {
+        width: 45px;
+        height: 45px;
+        border: 1px solid #888888;
+        background-color: #dddddd;
+        margin: 0 auto 8px auto;
+    }
+
+    .team-member marquee {
+        display: block;
+        text-align: center;
+    }
+
+    .team-member .name {
+        font-weight: bold;
+        color: #000000;
+        font-size: 15px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .team-member .role {
+        color: #333333;
+        font-size: 13.5px;
+        margin: 2px 0 0 0;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #2f8ff0;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .footer p {
+        color: #ffffff;
+        margin: 0;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Smart Examination Portal</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Home</a> ||
+        <a href="#">About</a> ||
+        <a href="#">Courses</a> ||
+        <a href="#">Exam Schedule</a> ||
+        <a href="#">Results</a> ||
+        <a href="#">Gallery</a>
+    </div>
+
+    <div class="tagline">
+        <p><marquee behavior="scroll" direction="left" scrollamount="5">Welcome to Smart Examination Portal - Learn, Test, and Grow!</marquee></p>
+    </div>
+
+    <div class="content">
+
+        <div class="main-col">
+            <h2>Welcome to Smart Examination Portal</h2>
+            <hr class="divider">
+
+            <div class="intro-block">
+                <div class="placeholder-img"></div>
+                <p>The Smart Examination Portal offers a modern and efficient way to conduct online tests. Our platform supports interactive assessments, instant grading, and detailed analytics for both students and instructors.</p>
+            </div>
+
+            <p>Whether you are preparing for academic exams or professional certifications, our system helps you practice and perform efficiently. We believe in empowering learners through technology-driven education and seamless evaluation.</p>
+        </div>
+
+        <div class="side-col">
+            <h3>Our Team</h3>
+            <hr class="side-divider">
+            <div class="team-member">
+                <marquee behavior="scroll" direction="up" scrollamount="2" height="60">
+                    <p class="name"> Ms. Anjali Sharma</p>
+                    <p class="role">Director</p>
+                </marquee>
+            </div>
+
+            <div class="team-member">
+                <marquee behavior="scroll" direction="up" scrollamount="2" height="60">
+                    <p class="name">Rahul Mehta</p>
+                    <p class="role">Technical Lead</p>
+                </marquee>
+            </div>
+
+            <div class="team-member">
+                <marquee behavior="scroll" direction="up" scrollamount="2" height="60">
+                    <p class="name">Neha Gupta</p>
+                    <p class="role">Exam Coordinator</p>
+                </marquee>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>@ 2025 Smart Examination Portal | All Rights Reserved</p>
+    </div>
+
+</div>
+
+</body>
+</html>
