@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d6d6d6;
+    color: #222;
+    font-family: Georgia, serif;
+}
+
+/* Main newspaper */
+.newspaper {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background-color: #fffdf5;
+
+    border: 1px solid #999;
+}
+
+/* Newspaper title */
+.newspaper h1 {
+    text-align: center;
+    font-size: 3rem;
+
+    padding-bottom: 15px;
+    border-bottom: 4px double #222;
+}
+
+/* Heading across all columns */
+.main-heading {
+    column-span: all;
+
+    text-align: center;
+    font-size: 2rem;
+
+    margin: 25px 0;
+}
+
+/* Three columns */
+.columns {
+    column-count: 3;
+    column-gap: 35px;
+
+    text-align: justify;
+    line-height: 1.7;
+}
+
+/* Paragraph */
+.columns p {
+    margin-bottom: 20px;
+}
+
+/* Image aligned left using float */
+.columns img {
+    width: 45%;
+    float: left;
+
+    margin: 0 15px 10px 0;
+
+    border: 3px solid #333;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+
+    .columns {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .newspaper {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .columns {
+        column-count: 1;
+    }
+
+    .newspaper h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #172a3a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+section {
+    width: 100%;
+    min-height: 450px;
+    padding: 70px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #355c7d,
+        #6c5b7b,
+        #c06c84
+    );
+    color: white;
+}
+
+.history {
+    background-color: #fff3e6;
+
+    /* Parallax-like effect */
+    background-attachment: fixed;
+
+    border: 5px solid #e09f3e;
+}
+
+.history p {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Places section */
+.places {
+    background: radial-gradient(
+        circle,
+        #ffffff,
+        #cde8f6
+    );
+}
+
+.place-box {
+    display: inline-block;
+    width: 28%;
+    min-height: 180px;
+    margin: 20px 1%;
+    padding: 30px;
+    border: 2px solid #355c7d;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.place-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Food section */
+.food {
+    background-color: #f8d7da;
+
+    /* Second section with fixed background */
+    background-attachment: fixed;
+
+    border-top: 5px solid #b02a37;
+}
+
+.food p {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #172a3a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .place-box {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+}
