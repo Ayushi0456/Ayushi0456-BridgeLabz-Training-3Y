@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Loader */
+.loader {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+/* Circles */
+.circle {
+    width: 20px;
+    height: 20px;
+
+    background-color: black;
+
+    border-radius: 50%;
+
+    animation: move 1s infinite;
+}
+
+/* Second circle delay */
+.circle:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+/* Third circle delay */
+.circle:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Animation */
+@keyframes move {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}

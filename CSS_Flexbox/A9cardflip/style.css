@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+}
+
+/* Card container */
+.card-container {
+    width: 300px;
+    height: 350px;
+
+    /* Creates 3D perspective */
+    perspective: 1000px;
+}
+
+/* Card */
+.card {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    /* Preserve 3D effect */
+    transform-style: preserve-3d;
+
+    transition: transform 0.8s;
+}
+
+/* Flip card on hover */
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+/* Front and back */
+.front,
+.back {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    border-radius: 10px;
+
+    backface-visibility: hidden;
+}
+
+/* Front */
+.front {
+    background-color: #eee;
+}
+
+.front img {
+    width: 250px;
+    height: 180px;
+
+    object-fit: cover;
+}
+
+/* Back */
+.back {
+    background-color: #ddd;
+
+    padding: 30px;
+
+    text-align: center;
+
+    transform: rotateY(180deg);
+}

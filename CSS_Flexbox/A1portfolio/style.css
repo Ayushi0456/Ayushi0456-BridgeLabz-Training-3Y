@@ -1,0 +1,116 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    /* Flexbox for page structure */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+
+    padding: 20px 40px;
+
+    /* Align name and navigation horizontally */
+    display: flex;
+
+    /* Name on left, navigation on right */
+    justify-content: space-between;
+
+    /* Center vertically */
+    align-items: center;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main area */
+main {
+    flex: 1;
+
+    /* Put About and Image side-by-side */
+    display: flex;
+
+    /* Center horizontally */
+    justify-content: center;
+
+    /* Center vertically */
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 50px;
+}
+
+/* About section */
+.about {
+    width: 50%;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+/* Image section */
+.image-section {
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+
+    /* Header items stack vertically */
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Main sections stack vertically */
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about,
+    .image-section {
+        width: 100%;
+    }
+}

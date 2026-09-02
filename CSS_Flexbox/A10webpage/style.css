@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+
+    padding: 20px 40px;
+
+    /* Flexbox */
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main - Grid */
+main {
+    flex: 1;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+
+    padding: 40px;
+}
+
+/* Article */
+article h1 {
+    margin-bottom: 25px;
+
+    /* Animation */
+    animation: moveUp 1s ease;
+}
+
+/* Three boxes using Flexbox */
+.boxes {
+    display: flex;
+
+    gap: 20px;
+}
+
+/* Box */
+.box {
+    flex: 1;
+
+    padding: 30px;
+
+    background-color: #eee;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+/* Sidebar */
+aside {
+    background-color: #eee;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+/* Animation */
+@keyframes moveUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    /* Main becomes one column */
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    /* Navigation can stack */
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Three boxes stack */
+    .boxes {
+        flex-direction: column;
+    }
+}
