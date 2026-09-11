@@ -1,0 +1,121 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    padding: 30px;
+    text-align: center;
+
+    background-color: #263238;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Form container */
+.form-section {
+    max-width: 500px;
+
+    margin: 50px auto;
+    padding: 35px;
+
+    background-color: white;
+    border-radius: 15px;
+
+    /* Subtle shadow */
+    box-shadow: 0 8px 20px #bbb;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+/* Labels */
+label {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* Input and textarea */
+input,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 2px solid #bbb;
+    border-radius: 8px;
+
+    box-shadow: 0 2px 5px #ddd;
+
+    font-size: 16px;
+
+    transition: all 0.3s ease;
+}
+
+/* Input focus */
+input:focus {
+    outline: 3px solid #2196f3;
+    outline-offset: 4px;
+
+    border-color: #2196f3;
+}
+
+/* Textarea focus */
+textarea:focus {
+    outline: 3px dashed #e91e63;
+    outline-offset: 5px;
+
+    border-color: #e91e63;
+}
+
+/* Submit button */
+button {
+    margin-top: 15px;
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #263238;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #455a64;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #263238;
+    color: white;
+}

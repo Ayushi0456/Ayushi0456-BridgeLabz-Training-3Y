@@ -1,0 +1,125 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    padding: 30px;
+    text-align: center;
+
+    background-color: #263238;
+    color: white;
+}
+
+/* Article */
+.article {
+    max-width: 850px;
+
+    margin: 50px auto;
+    padding: 40px;
+
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* Main heading */
+.article h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+
+    /* Letter spacing */
+    letter-spacing: 2px;
+
+    text-align: center;
+}
+
+/* Intro paragraph */
+.intro {
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    line-height: 1.8;
+    letter-spacing: 1px;
+
+    text-align: justify;
+}
+
+/* First letter pseudo-element */
+.intro::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* First line pseudo-element */
+.intro::first-line {
+    text-decoration: underline;
+}
+
+/* Serif font */
+.serif-text {
+    margin-top: 25px;
+
+    font-family: Georgia, serif;
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+/* Sans-serif font */
+.sans-text {
+    margin-top: 20px;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+/* Styled paragraph */
+.styled-text {
+    margin-top: 20px;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Strong text */
+strong {
+    color: #d32f2f;
+}
+
+/* Emphasized text */
+em {
+    color: #7b1fa2;
+}
+
+/* Marked text */
+mark {
+    background-color: #fff176;
+    color: #222;
+
+    padding: 3px;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #263238;
+    color: white;
+}

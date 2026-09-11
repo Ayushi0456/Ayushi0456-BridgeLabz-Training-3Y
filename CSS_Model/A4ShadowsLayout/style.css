@@ -1,0 +1,107 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+
+    background-color: #263238;
+    color: white;
+}
+
+/* Text shadow on heading */
+header h1 {
+    margin-bottom: 10px;
+
+    text-shadow: 3px 3px 5px #000;
+}
+
+/* Main */
+main {
+    min-height: 70vh;
+}
+
+/* Arrange cards in one row */
+.card-container {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+    padding: 40px;
+}
+
+/* Common card styling */
+.card {
+    width: 280px;
+    min-height: 220px;
+
+    padding: 30px;
+
+    background-color: white;
+    border-radius: 15px;
+
+    text-align: center;
+
+    /* Smooth animation */
+    transition: all 0.4s ease;
+}
+
+/* Card heading */
+.card h2 {
+    margin-bottom: 20px;
+
+    text-shadow: 2px 2px 4px #aaa;
+}
+
+/* Paragraph */
+.card p {
+    line-height: 1.6;
+}
+
+/* Different box shadows */
+.shadow-one {
+    box-shadow: 0 5px 15px #aaa;
+}
+
+.shadow-two {
+    box-shadow: 10px 10px 25px #888;
+}
+
+.shadow-three {
+    box-shadow:
+        0 5px 10px #aaa,
+        0 10px 20px #ccc;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-15px);
+
+    /* Larger shadow on hover */
+    box-shadow: 0 20px 35px #888;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #263238;
+    color: white;
+}

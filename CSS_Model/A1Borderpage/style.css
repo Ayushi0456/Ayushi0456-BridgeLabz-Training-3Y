@@ -1,0 +1,170 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Header styling */
+header {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main section */
+main {
+    padding: 40px;
+}
+
+/* 
+   Flexbox is used to align all boxes horizontally.
+*/
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Common styling for all boxes */
+.box {
+    width: 210px;
+    min-height: 160px;
+    background-color: white;
+    text-align: center;
+
+    /* Padding creates space inside the box */
+    padding: 25px;
+
+    /* Smooth border transition on hover */
+    transition: border-color 0.3s ease;
+}
+
+.box h2 {
+    margin-bottom: 15px;
+}
+
+/* Solid border */
+.solid {
+    border: 5px solid #1976d2;
+}
+
+/* Dashed border */
+.dashed {
+    border: 5px dashed #388e3c;
+}
+
+/* Double border */
+.double {
+    border: 7px double #d32f2f;
+}
+
+/* Groove border */
+.groove {
+    border: 7px groove #7b1fa2;
+}
+
+/* 
+   Hover effect:
+   Border color changes smoothly.
+*/
+.box:hover {
+    border-color: #ff9800;
+}
+
+
+/* Padding demonstration section */
+.padding-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.padding-section h2 {
+    margin-bottom: 25px;
+}
+
+/* Flexbox for padding boxes */
+.padding-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Common padding box styling */
+.padding-box {
+    background-color: #fff3cd;
+    border: 3px solid #ff9800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Different padding values */
+.small-padding {
+    padding: 10px;
+}
+
+.medium-padding {
+    padding: 25px;
+}
+
+.large-padding {
+    padding: 45px;
+}
+
+
+/* Rounded corners section */
+.rounded-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.rounded-section h2 {
+    margin-bottom: 25px;
+}
+
+/* Rounded box */
+.rounded-box {
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+    background-color: #d1ecf1;
+    border: 5px solid #17a2b8;
+
+    /* Creates rounded corners */
+    border-radius: 30px;
+
+    transition: border-color 0.3s ease;
+}
+
+/* Hover effect for rounded box */
+.rounded-box:hover {
+    border-color: #e91e63;
+}
+
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #263238;
+    color: white;
+    text-align: center;
+}

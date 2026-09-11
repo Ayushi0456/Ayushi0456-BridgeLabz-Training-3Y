@@ -1,0 +1,155 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    padding: 30px;
+    text-align: center;
+
+    background-color: #263238;
+    color: white;
+}
+
+/* Main */
+main {
+    padding: 40px;
+}
+
+/* Center box model */
+.box-model-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =====================================
+   MARGIN LAYER
+===================================== */
+
+.margin-layer {
+    margin: 30px;
+    padding: 30px;
+
+    background-color: #ffe0b2;
+
+    /* Outline shows the margin area */
+    outline: 3px dashed #e65100;
+}
+
+/* =====================================
+   BORDER LAYER
+===================================== */
+
+.border-layer {
+    padding: 25px;
+
+    border: 15px solid #7e57c2;
+}
+
+/* =====================================
+   PADDING LAYER
+===================================== */
+
+.padding-layer {
+    padding: 30px;
+
+    background-color: #c8e6c9;
+}
+
+/* =====================================
+   CONTENT LAYER
+===================================== */
+
+.content-layer {
+    width: 180px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #90caf9;
+
+    border: 2px solid #1565c0;
+
+    font-weight: bold;
+}
+
+/* Description */
+.description {
+    margin-top: 20px;
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    line-height: 1.8;
+}
+
+/* Box sizing comparison */
+.comparison {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.comparison h2 {
+    margin-bottom: 25px;
+}
+
+/* Flexbox */
+.comparison-container {
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Default box sizing */
+.default-box {
+    width: 250px;
+    height: 120px;
+
+    padding: 30px;
+    border: 10px solid #e91e63;
+
+    background-color: #fce4ec;
+
+    /* Default value */
+    box-sizing: content-box;
+}
+
+/* Border-box */
+.border-box {
+    width: 250px;
+    height: 120px;
+
+    padding: 30px;
+    border: 10px solid #2196f3;
+
+    background-color: #e3f2fd;
+
+    /* Includes padding and border */
+    box-sizing: border-box;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #263238;
+    color: white;
+}

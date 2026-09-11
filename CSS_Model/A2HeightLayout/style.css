@@ -1,0 +1,95 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #263238;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+/* Main area */
+main {
+    min-height: 75vh;
+}
+
+/* Flexbox centers all boxes */
+.box-container {
+    min-height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Common box styling */
+.size-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+
+    border-radius: 15px;
+}
+
+/* Box 1 uses px */
+.box-one {
+    width: 200px;
+    height: 150px;
+    background-color: #bbdefb;
+}
+
+/* Box 2 uses percentage and vh */
+.box-two {
+    width: 40%;
+    height: 25vh;
+    min-height: 150px;
+    max-width: 450px;
+    background-color: #c8e6c9;
+}
+
+/* Box 3 uses em */
+.box-three {
+    width: 15em;
+    min-height: 180px;
+    max-width: 250px;
+    background-color: #ffccbc;
+
+    /* Controls extra content */
+    overflow: auto;
+}
+
+.extra-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #263238;
+    color: white;
+}
