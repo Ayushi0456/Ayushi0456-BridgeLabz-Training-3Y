@@ -1,0 +1,103 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #263238;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Responsive Grid gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Image card */
+.image-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container */
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image */
+.image-container img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+
+    /* Smooth scaling */
+    transition: transform 0.3s ease;
+}
+
+/* Dark overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Scale image on hover */
+.image-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Show dark overlay */
+.image-card:hover .overlay {
+    opacity: 1;
+}
+
+/* Caption */
+figcaption {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #263238;
+    color: white;
+}
+
+/* Stack images in one column below 700px */
+@media (max-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,63 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Box-Sizing Comparison</h1>
+        <p>Understanding content-box and border-box</p>
+    </header>
+
+    <main>
+
+        <section class="comparison">
+
+            <!-- Default box sizing -->
+            <article class="box-card">
+                <h2>Default</h2>
+
+                <div class="default-box">
+                    Content Box
+                </div>
+
+                <p>
+                    The default value is
+                    <strong>content-box</strong>.
+                    Width applies only to the content.
+                    Padding and border are added to the total size.
+                </p>
+            </article>
+
+            <!-- Border-box -->
+            <article class="box-card">
+                <h2>Border-Box</h2>
+
+                <div class="border-box">
+                    Border Box
+                </div>
+
+                <p>
+                    With <strong>border-box</strong>,
+                    padding and border are included inside
+                    the specified width and height.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>CSS Box-Sizing Demonstration</p>
+    </footer>
+
+</body>
+</html>
+```

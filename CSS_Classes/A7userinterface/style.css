@@ -1,0 +1,169 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body with soft gradient background */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+
+    display: flex;
+    flex-direction: column;
+
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main area */
+main {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Card container */
+.ui-card {
+    width: 450px;
+    max-width: 100%;
+
+    background-color: white;
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ui-card h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Search and dropdown sections */
+.search-section,
+.dropdown-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+}
+
+/* Input and select */
+input,
+select {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #bbb;
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* Focus effect */
+input:focus,
+select:focus {
+    outline: 2px solid #1976d2;
+    border-color: #1976d2;
+}
+
+/* Common button styling */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 15px;
+    cursor: pointer;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s ease;
+}
+
+/* Search button */
+.search-button {
+    background-color: #1976d2;
+    color: white;
+}
+
+/* Button hover */
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Search button active */
+button:active {
+    transform: scale(0.96);
+}
+
+/* Buttons container */
+.button-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Primary button */
+.primary-button {
+    background-color: #388e3c;
+    color: white;
+}
+
+/* Secondary button */
+.secondary-button {
+    background-color: #757575;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    main {
+        padding: 20px;
+    }
+
+    .ui-card {
+        padding: 20px;
+    }
+
+    .button-section {
+        flex-direction: column;
+    }
+}

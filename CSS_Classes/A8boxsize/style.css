@@ -1,0 +1,138 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+
+    background-color: #263238;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main */
+main {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+/* Comparison layout */
+.comparison {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 40px;
+
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Cards */
+.box-card {
+    background-color: white;
+
+    width: 350px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.box-card h2 {
+    margin-bottom: 20px;
+}
+
+/* Default content-box */
+.default-box {
+    box-sizing: content-box;
+
+    width: 200px;
+    height: 100px;
+
+    padding: 20px;
+
+    border: 10px solid #e53935;
+
+    background-color: #ffcdd2;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Border-box */
+.border-box {
+    box-sizing: border-box;
+
+    width: 200px;
+    height: 100px;
+
+    padding: 20px;
+
+    border: 10px solid #1976d2;
+
+    background-color: #bbdefb;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Description */
+.box-card p {
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+
+    background-color: #263238;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .comparison {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-card {
+        width: 90%;
+    }
+}

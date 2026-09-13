@@ -1,0 +1,164 @@
+/* Reset default spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #263238;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main area */
+main {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center all animations */
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* Animation cards */
+.animation-box {
+    width: 250px;
+    height: 220px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.animation-box h2 {
+    font-size: 20px;
+}
+
+/* Moving Box */
+.moving-box {
+    width: 50px;
+    height: 50px;
+    background-color: #1976d2;
+    border-radius: 8px;
+
+    animation-name: moveBox;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Keyframes for moving box */
+@keyframes moveBox {
+    from {
+        transform: translateX(-60px);
+    }
+
+    to {
+        transform: translateX(60px);
+    }
+}
+
+/* Bouncing Ball */
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: #e53935;
+    border-radius: 50%;
+
+    animation-name: bounceBall;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Keyframes for bouncing ball */
+@keyframes bounceBall {
+    from {
+        transform: translateY(-30px);
+    }
+
+    to {
+        transform: translateY(30px);
+    }
+}
+
+/* Color changing text */
+.color-text {
+    animation-name: changeColor;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Keyframes for color changing */
+@keyframes changeColor {
+    0% {
+        color: #1976d2;
+    }
+
+    50% {
+        color: #e53935;
+    }
+
+    100% {
+        color: #7b1fa2;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #263238;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .animation-container {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .animation-box {
+        width: 90%;
+    }
+}

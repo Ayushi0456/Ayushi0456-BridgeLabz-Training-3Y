@@ -1,0 +1,134 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #263238;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Flexbox layout for all examples */
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* Individual example boxes */
+.example-box {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.example-box h2 {
+    margin-bottom: 20px;
+}
+
+/* :hover example */
+.example-box a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    background-color: #1976d2;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Changes when mouse moves over link */
+.example-box a:hover {
+    background-color: #d32f2f;
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #388e3c;
+    color: white;
+    cursor: pointer;
+}
+
+/* :focus example */
+button:focus {
+    outline: 3px solid #ff9800;
+    outline-offset: 3px;
+}
+
+/* :active example */
+.active-button:active {
+    background-color: #7b1fa2;
+    transform: scale(0.95);
+}
+
+/* List styling */
+.color-list {
+    list-style: none;
+}
+
+.color-list li {
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+/* :nth-child() example */
+.color-list li:nth-child(2) {
+    background-color: #ffcc80;
+}
+
+.color-list li:nth-child(4) {
+    background-color: #90caf9;
+}
+
+/* Explanation text */
+.example-box p {
+    margin-top: 15px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #263238;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .examples {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .example-box {
+        width: 90%;
+    }
+}

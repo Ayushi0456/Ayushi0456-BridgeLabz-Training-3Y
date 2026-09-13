@@ -1,0 +1,150 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #263238;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main content */
+main {
+    flex: 1;
+
+    /* Flexbox alignment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+/* Common button styling */
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+
+    /* Smooth hover effect */
+    transition: all 0.3s ease;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Primary button */
+.primary {
+    background-color: #1976d2;
+    color: white;
+    border: 2px solid #1976d2;
+}
+
+/* Primary hover */
+.primary:hover {
+    background-color: #0d47a1;
+}
+
+/* Primary active */
+.primary:active {
+    transform: scale(0.95);
+}
+
+/* Secondary button */
+.secondary {
+    background-color: #388e3c;
+    color: white;
+    border: 2px solid #388e3c;
+}
+
+/* Secondary hover */
+.secondary:hover {
+    background-color: #1b5e20;
+}
+
+/* Outline button */
+.outline {
+    background-color: transparent;
+    color: #1976d2;
+    border: 2px solid #1976d2;
+}
+
+/* Outline hover */
+.outline:hover {
+    background-color: #1976d2;
+    color: white;
+}
+
+/* Focus demonstration */
+.focus-button {
+    background-color: #f57c00;
+    color: white;
+    border: 2px solid #f57c00;
+}
+
+/* :focus pseudo-class */
+.focus-button:focus {
+    outline: 4px solid #ffcc80;
+    outline-offset: 3px;
+}
+
+/* Disabled button */
+.disabled-button {
+    background-color: #bdbdbd;
+    color: #666;
+    border: 2px solid #bdbdbd;
+}
+
+/* :disabled pseudo-class */
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    box-shadow: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #263238;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .button-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 220px;
+    }
+}
