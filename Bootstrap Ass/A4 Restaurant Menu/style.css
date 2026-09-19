@@ -1,0 +1,33 @@
+/* Food image */
+.food-image {
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+/* Table styling */
+.table {
+    vertical-align: middle;
+}
+
+
+/* List group hover */
+.list-group-item {
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+
+/* Mobile image */
+@media (max-width: 576px) {
+
+    .food-image {
+        height: 250px;
+    }
+
+}

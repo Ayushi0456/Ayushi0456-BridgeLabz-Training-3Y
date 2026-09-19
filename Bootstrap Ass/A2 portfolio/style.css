@@ -1,0 +1,31 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+/* Profile image */
+.profile-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+/* Contact form box */
+.contact-box {
+    max-width: 650px;
+    margin: auto;
+    border-radius: 12px;
+}
+
+
+/* Button hover effect */
+.btn {
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
