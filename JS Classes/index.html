@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 2</title>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+        background-color: #f4f6f8;
+    }
+
+    section {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+    }
+
+    input,
+    select,
+    button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #243042;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .error {
+        color: red;
+        font-size: 14px;
+    }
+
+    .success {
+        color: green;
+        font-size: 14px;
+    }
+
+    .invalid {
+        border: 2px solid red;
+    }
+
+    .valid {
+        border: 2px solid green;
+    }
+
+    .output {
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+
+<h1>JavaScript Assignment 2</h1>
+
+<!-- Q1: Product Manager -->
+<section>
+    <h2>Q1 - E-Commerce Product Manager</h2>
+    <button id="showProductsButton">Display Products</button>
+    <pre id="productOutput" class="output"></pre>
+</section>
+
+<!-- Q2: Student Form Validator -->
+<section>
+    <h2>Q2 - Student Form Validator</h2>
+
+    <form id="studentForm" novalidate>
+        <label for="studentName">Name:</label>
+        <input type="text" id="studentName">
+        <small id="studentNameError" class="error"></small>
+
+        <label for="studentEmail">Email:</label>
+        <input type="text" id="studentEmail">
+        <small id="studentEmailError" class="error"></small>
+
+        <label for="studentPhone">Phone:</label>
+        <input type="text" id="studentPhone">
+        <small id="studentPhoneError" class="error"></small>
+
+        <label for="studentPassword">Password:</label>
+        <input type="password" id="studentPassword">
+        <small id="studentPasswordError" class="error"></small>
+
+        <button type="submit">Register Student</button>
+        <p id="studentResult" class="success"></p>
+    </form>
+</section>
+
+<!-- Q3: Library Management -->
+<section>
+    <h2>Q3 - Library Management System</h2>
+
+    <label for="bookISBN">Enter ISBN to issue a book:</label>
+    <input type="text" id="bookISBN">
+
+    <button id="issueBookButton">Issue Book</button>
+    <button id="showBooksButton">Display Available Books</button>
+
+    <pre id="libraryOutput" class="output"></pre>
+</section>
+
+<!-- Q4: Custom Form Builder -->
+<section>
+    <h2>Q4 - Custom Form Builder</h2>
+
+    <div id="dynamicFormContainer"></div>
+    <pre id="dynamicFormOutput" class="output"></pre>
+</section>
+
+<!-- Q5: Movie Ticket Booking -->
+<section>
+    <h2>Q5 - Movie Ticket Booking</h2>
+
+    <form id="movieForm" novalidate>
+        <label for="movieName">Name:</label>
+        <input type="text" id="movieName">
+        <small id="movieNameError" class="error"></small>
+
+        <label for="movieEmail">Email:</label>
+        <input type="text" id="movieEmail">
+        <small id="movieEmailError" class="error"></small>
+
+        <label for="movieSeats">Number of Seats (1-10):</label>
+        <input type="number" id="movieSeats" min="1" max="10">
+        <small id="movieSeatsError" class="error"></small>
+
+        <button type="submit">Book Tickets</button>
+    </form>
+
+    <pre id="ticketOutput" class="output"></pre>
+</section>
+
+<!-- Each question has a separate JavaScript file. -->
+<script src="Q1_ProductManager.js"></script>
+<script src="Q2_StudentFormValidator.js"></script>
+<script src="Q3_LibraryManagement.js"></script>
+<script src="Q4_CustomFormBuilder.js"></script>
+<script src="Q5_MovieTicketBooking.js"></script>
+```
+
+</body>
+</html>
