@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>learning Input Value</h1>
+    <input type="text"id="name" value="">
+    <button id="add">add</button>
+    <ul id = "head">
+        <li>Apple</li>
+        <li>Mango</li>
+    </ul>
+    
+</body>
+<script>
+    let nameEl=document.querySelector("#name")
+    let headEl=document.querySelector("#head")
+    let addEl=document.querySelector("#add")
+
+    addEl.addEventListener("click",()=>{
+        let item=nameEl.value;
+
+        if(item==""){
+            alert("empty item can't be add")
+            return 
+        }
+    
+    
+   
+    //     let liEl = document.createElement("li");
+    //     liEl.textContent=item;
+    //     headEl.appendChild(liEl);
+    // })
+    
+    //second way 
+     headEl.innerHTML += `<li>${item}</li>`;
+    })
+
+
+    
+</script>
+</html>

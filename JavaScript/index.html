@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  
+        .active{
+        visibility:visible;
+        }
+       
+     .notactive{
+        visibility:hidden;
+     }
+
+</style>
+
+<body>
+    <h1 id="heading"class >0</h1>
+    <button id="inc">Increment</button>
+    <button id="dec">Decrement</button>
+    <button id="res">Reset</button>
+    <button id="toggle">toggle</button>
+
+    
+</body>
+<script>
+    const incE1=document.querySelector("#inc");
+    const decE1=document.querySelector("#dec");
+    const headingE1=document.querySelector("#heading");
+    const toggleEl=document.querySelector("#toggle");
+
+    let count=0;
+    toggleEl.addEventListener("click",()=>{
+        console.log("uygfds");
+        headingE1.classList.toggle("notactive")
+    })
+    incE1.addEventListener("click",()=>{
+        count++;
+        headingE1.textContent=count;
+    })
+
+    decE1.addEventListener("click",()=>{
+        count--;
+        headingE1.textContent=count;
+    })
+    res.addEventListener("click",()=>{
+        count=0;
+        headingE1.textContent=count;
+    })
+
+
+
+</script>
+</html>
