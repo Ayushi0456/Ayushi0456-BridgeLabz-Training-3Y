@@ -1,0 +1,106 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 9px 15px;
+    margin: 5px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+li {
+    margin: 10px 0;
+}
+
+#imageGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+#imageGallery img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent img {
+    max-width: 80vw;
+    max-height: 80vh;
+    border-radius: 10px;
+}
+
+/* Themes */
+
+body[data-theme="light"] {
+    background: #f4f4f4;
+    color: #222;
+}
+
+body[data-theme="dark"] {
+    background: #222;
+    color: white;
+}
+
+body[data-theme="dark"] section {
+    background: #444;
+}
+
+body[data-theme="blue"] {
+    background: #dbeafe;
+    color: #1e3a8a;
+}
+
+body[data-theme="blue"] section {
+    background: #bfdbfe;
+}
+

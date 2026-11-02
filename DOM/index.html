@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>JavaScript DOM Assignment</h1>
+
+    <!-- Q1: Dynamic Product List -->
+    <section>
+        <h2>1. Dynamic Product List Manager</h2>
+
+        <input type="text" id="productInput" placeholder="Enter product name">
+        <button id="addProduct">Add Product</button>
+
+        <ul id="productList"></ul>
+    </section>
+
+
+    <!-- Q2: Character Counter -->
+    <section>
+        <h2>2. Live Character Counter</h2>
+
+        <textarea id="message" maxlength="100"
+            placeholder="Enter your message (Max 100 characters)"></textarea>
+
+        <p>Remaining Characters:
+            <span id="counter">100</span>
+        </p>
+
+        <button id="resetButton">Reset</button>
+    </section>
+
+
+    <!-- Q3: Multi-Step Form -->
+    <section>
+        <h2>3. Multi-Step Form</h2>
+
+        <form id="multiStepForm">
+
+            <div class="formStep" id="step1">
+                <h3>Step 1: Name</h3>
+                <input type="text" id="userName" placeholder="Enter your name">
+                <button type="button" id="next1">Next</button>
+            </div>
+
+            <div class="formStep" id="step2" hidden>
+                <h3>Step 2: Email</h3>
+                <input type="email" id="userEmail" placeholder="Enter your email">
+                <button type="button" id="back2">Back</button>
+                <button type="button" id="next2">Next</button>
+            </div>
+
+            <div class="formStep" id="step3" hidden>
+                <h3>Step 3: Password</h3>
+                <input type="password" id="userPassword"
+                    placeholder="Enter password">
+
+                <button type="button" id="back3">Back</button>
+                <button type="button" id="submitForm">Submit</button>
+            </div>
+
+        </form>
+
+        <div id="summary" hidden></div>
+    </section>
+
+
+    <!-- Q4: Theme Switcher -->
+    <section>
+        <h2>4. Theme Switcher</h2>
+
+        <button class="themeButton" data-theme="light">Light</button>
+        <button class="themeButton" data-theme="dark">Dark</button>
+        <button class="themeButton" data-theme="blue">Blue</button>
+    </section>
+
+
+    <!-- Q5: Image Gallery -->
+    <section>
+        <h2>5. Image Gallery</h2>
+
+        <div id="imageGallery">
+
+            <img src="https://picsum.photos/id/1015/200/150" alt="Image 1">
+            <img src="https://picsum.photos/id/1016/200/150" alt="Image 2">
+            <img src="https://picsum.photos/id/1018/200/150" alt="Image 3">
+            <img src="https://picsum.photos/id/1020/200/150" alt="Image 4">
+            <img src="https://picsum.photos/id/1024/200/150" alt="Image 5">
+            <img src="https://picsum.photos/id/1025/200/150" alt="Image 6">
+
+        </div>
+
+    </section>
+
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal" hidden>
+        <div class="modalContent">
+            <img id="previewImage" src="" alt="Preview">
+        </div>
+    </div>
+
+
+    <!-- JavaScript Files -->
+    <script src="JS/Q1_productList.js"></script>
+    <script src="JS/Q2_characterCounter.js"></script>
+    <script src="JS/Q3_multiStepForm.js"></script>
+    <script src="JS/Q4_themeSwitcher.js"></script>
+    <script src="JS/Q5_imageGallery.js"></script>
+
+</body>
+</html>
+
