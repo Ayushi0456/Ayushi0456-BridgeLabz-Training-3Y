@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive FAQ</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            padding: 30px;
+        }
+
+        .faq {
+            background: white;
+            padding: 15px;
+            margin: 15px auto;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+
+        .question {
+            cursor: pointer;
+            color: #2c3e50;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+        }
+
+        input {
+            padding: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<main>
+
+    <section class="faq">
+        <h3 class="question">1. What is HTML?</h3>
+        <div class="answer">
+            <p>HTML is used to create the structure of web pages.</p>
+            <input type="text" placeholder="Enter your answer">
+        </div>
+    </section>
+
+    <section class="faq">
+        <h3 class="question">2. What is CSS?</h3>
+        <div class="answer">
+            <p>CSS is used to style web pages.</p>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h3 class="question">3. What is JavaScript?</h3>
+        <div class="answer">
+            <p>JavaScript makes websites interactive.</p>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h3 class="question">4. What is jQuery?</h3>
+        <div class="answer">
+            <p>jQuery is a JavaScript library.</p>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h3 class="question">5. What is Bootstrap?</h3>
+        <div class="answer">
+            <p>Bootstrap is a CSS framework.</p>
+        </div>
+    </section>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

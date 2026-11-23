@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .banner {
+            background: #ffcc80;
+            padding: 25px;
+            margin: 15px auto;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .banner:nth-child(even) {
+            background: #bde0fe;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #34495e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Special Offers</h1>
+</header>
+
+<main>
+
+    <section id="banners">
+
+        <article class="banner">
+            <h2>Summer Sale</h2>
+            <p>Get 50% discount on summer products!</p>
+            <button class="hideBanner">Hide</button>
+        </article>
+
+        <article class="banner">
+            <h2>Winter Sale</h2>
+            <p>Get amazing winter discounts!</p>
+            <button class="hideBanner">Hide</button>
+        </article>
+
+        <article class="banner">
+            <h2>Festival Offer</h2>
+            <p>Special festival discounts available!</p>
+            <button class="hideBanner">Hide</button>
+        </article>
+
+        <article class="banner">
+            <h2>New Year Offer</h2>
+            <p>Enjoy exciting New Year deals!</p>
+            <button class="hideBanner">Hide</button>
+        </article>
+
+        <article class="banner">
+            <h2>Weekend Sale</h2>
+            <p>Grab exciting weekend offers!</p>
+            <button class="hideBanner">Hide</button>
+        </article>
+
+    </section>
+
+    <section>
+        <h3>Banner Controls</h3>
+
+        <button id="show">Show All</button>
+        <button id="slideUp">Slide Up</button>
+        <button id="slideDown">Slide Down</button>
+        <button id="fadeIn">Fade In</button>
+        <button id="fadeOut">Fade Out</button>
+    </section>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

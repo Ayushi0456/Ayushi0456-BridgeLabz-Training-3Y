@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members Directory</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            padding: 25px;
+        }
+
+        .team-panel {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .department {
+            background: #e3f2fd;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .employee {
+            background: #eeeeee;
+            padding: 15px;
+            width: 170px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .contact {
+            display: none;
+            color: blue;
+            font-size: 13px;
+        }
+
+        .highlight {
+            background: #90ee90 !important;
+            border: 2px solid green;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            background: #34495e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Team Members</h1>
+</header>
+
+<main>
+
+    <section class="team-panel">
+
+        <h2>Company Team Directory</h2>
+
+        <div class="team-content">
+
+            <!-- IT Department -->
+            <section class="department">
+
+                <h2>IT Department</h2>
+
+                <div class="members">
+
+                    <article class="employee" data-id="manager1" data-role="manager">
+                        <h3>Rahul</h3>
+                        <p>IT Manager</p>
+                    </article>
+                    <p class="contact">Email: rahul@company.com</p>
+
+                    <article class="employee" data-manager="manager1">
+                        <h3>Amit</h3>
+                        <p>Software Developer</p>
+                    </article>
+                    <p class="contact">Email: amit@company.com</p>
+
+                    <article class="employee" data-manager="manager1">
+                        <h3>Priya</h3>
+                        <p>Web Developer</p>
+                    </article>
+                    <p class="contact">Email: priya@company.com</p>
+
+                </div>
+            </section>
+
+            <!-- HR Department -->
+            <section class="department">
+
+                <h2>HR Department</h2>
+
+                <div class="members">
+
+                    <article class="employee" data-id="manager2" data-role="manager">
+                        <h3>Neha</h3>
+                        <p>HR Manager</p>
+                    </article>
+                    <p class="contact">Email: neha@company.com</p>
+
+                    <article class="employee" data-manager="manager2">
+                        <h3>Riya</h3>
+                        <p>HR Executive</p>
+                    </article>
+                    <p class="contact">Email: riya@company.com</p>
+
+                    <article class="employee" data-manager="manager2">
+                        <h3>Arjun</h3>
+                        <p>Recruiter</p>
+                    </article>
+                    <p class="contact">Email: arjun@company.com</p>
+
+                </div>
+            </section>
+
+        </div>
+
+        <button id="randomEmployee">Select Random Employee</button>
+        <button id="toggleTeam">Collapse / Expand Team</button>
+
+    </section>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
